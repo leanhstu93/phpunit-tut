@@ -1,8 +1,12 @@
 <?php declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
+use App\Controllers\PaymentController;
 
 class PaymentControllerTest extends TestCase
 {
+    /**
+     * @covers \BankAccount
+     */
     public function testPushAndPop(): void
     {
         $stack = [];
