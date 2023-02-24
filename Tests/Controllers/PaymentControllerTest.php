@@ -5,7 +5,7 @@ use App\Controllers\PaymentController;
 class PaymentControllerTest extends TestCase
 {
     /**
-     * @covers \BankAccount
+     * @covers \PaymentController()->total()
      */
     public function testPushAndPop(): void
     {
