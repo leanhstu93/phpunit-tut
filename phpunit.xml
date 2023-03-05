@@ -20,9 +20,10 @@
     </testsuites>
 
     <coverage cacheDirectory=".phpunit.cache/code-coverage"
-              processUncoveredFiles="true">
+              processUncoveredFiles="false">
         <include>
-            <directory suffix=".php">src</directory>
+            <directory suffix=".php">src/Controllers</directory>
         </include>
     </coverage>
+
 </phpunit>

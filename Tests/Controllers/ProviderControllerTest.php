@@ -2,12 +2,13 @@
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Foo\CoveredClass
+ * @coversDefaultClass \App\Controllers\PaymentController
  */
 final class ProviderControllerTest extends TestCase
 {
     /**
      * @dataProvider additionProvider
+     * @covers ::add
      */
     public function testAdd(int $a, int $b, int $expected): void
     {
@@ -20,7 +21,7 @@ final class ProviderControllerTest extends TestCase
             [0, 0, 0],
             [0, 1, 1],
             [1, 0, 1],
-            [1, 1, 3]
+            [1, 1, 2]
         ];
     }
 }
