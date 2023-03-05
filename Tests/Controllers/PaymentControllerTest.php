@@ -5,8 +5,14 @@ use App\Controllers\PaymentController;
 class PaymentControllerTest extends TestCase
 {
     /**
-     * @covers \PaymentController()->total()
+     * @covers App\Controllers\PaymentController
      */
+    private $payment;
+
+    protected function setUp(): void
+    {
+        $this->payment = new PaymentController;
+    }
     public function testPushAndPop(): void
     {
         $stack = [];
